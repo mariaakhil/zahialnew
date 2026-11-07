@@ -307,3 +307,9 @@ svg { fill: currentColor; width: 16px; height: 16px; flex: none; }
 }
 
 .about-img img { object-position: 38% center; }
+
+/* Sister concern logo images: grey until hovered */
+.wm-img { height: 52px; width: auto; max-width: 100%; display: block; object-fit: contain; filter: grayscale(1); opacity: .7; transition: filter .3s, opacity .3s, transform .3s; }
+.concern-strip li:hover .wm-img { filter: none; opacity: 1; transform: scale(1.05); }
+@media (max-width: 1024px) { .wm-img { height: 44px; } }
+@media (max-width: 767px) { .wm-img { height: 38px; max-width: 150px; } }
