@@ -133,3 +133,12 @@
 
 /* real team photo: keep faces in frame when cropped */
 .who-img img, .about-img img { object-position: 38% center; }
+
+/* Single founders card */
+.leader-single { grid-template-columns: 1fr; max-width: 1000px; }
+.leader-single .leader-photo { flex-basis: 52%; min-height: 340px; }
+.leader-single .leader-photo::before { background-position: center; }
+.leader-single .leader-body { padding: 36px 34px; }
+.leader-single .leader-body h3 { font-size: 28px; }
+.leader-single .leader-body blockquote { font-size: 17px; }
+@media (max-width: 767px) { .leader-single .leader-photo { flex-basis: auto; min-height: 240px; } .leader-single .leader-body { padding: 26px 22px; } }
